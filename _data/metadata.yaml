@@ -1,0 +1,45 @@
+title: "Bootstrap Adam Dj Brett"
+description: "A Bootstrap Minimalist project by Adam Dj Brett"
+image: /logo.svg
+favicon: /logo.svg
+url: "http://localhost:8080"
+language: "en"
+locale: en_US
+
+metasocial: 
+ - facebook: "https://www.facebook.com/"
+ - twitteruser: "@username"
+ - twitter: "https://x.com/user"
+
+formspree_id: "https://formspree.io/f/"
+toc_widget_title: On This Page
+
+nav_logo:
+ title: 📓 11ty Journal
+
+navbar: 
+ - nav: Home
+   url: /
+ - nav: Blog
+   url: /blog/
+ - nav: About
+   url: /about/
+ - nav: Contact
+   url: /contact/
+
+nav_contact:
+ text: Search
+ url: /search/
+
+footer: 
+ text1: Built with
+ text2: 11ty
+ text2_url: https://11ty.dev
+ text3: Made by
+ text4: Adam DJ Brett
+ text4_url: https://adamdjbrett.com
+
+author: 
+ name: "Adam DJ Brett"
+ email: "info@adamdjbrett.com"
+ url: "/about/"

@@ -1,0 +1,16 @@
+{
+	"background_color": "#fff",
+	"theme_color": "#e95339",
+	"name": "researchguide",
+	"short_name": "researchguide",
+	"display": "minimal-ui",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "logo.svg",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	]
+}

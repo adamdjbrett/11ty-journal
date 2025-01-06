@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+<head>
+{% include "partials/seo.njk" %}
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
+{% include "partials/nav.njk" %}
+{{content|safe}}
+{% include "partials/footer.njk" %}
+</body>
+</html>
