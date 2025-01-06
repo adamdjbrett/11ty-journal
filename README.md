@@ -1,12 +1,9 @@
 # 📓 11ty Journal
 
-Project by [Adam Dj Brett](https://adamdjbrett.com)
-
-Developer [Adam Dj Brett](https://adamdjbrett.com)
 
 ----
 
-Features : 
+## Features: 
 + 11ty aka Eleventy
 + Bootstrap UI
 + Pagefind
@@ -28,7 +25,8 @@ Features :
 + Button Widget
 + Feed
 + Tags
-+ Clean CSS / Minimise
++ Clean CSS / Minimize
+
 
 ----
 
@@ -68,3 +66,7 @@ button:
 Footnotes Example : `[^1]` `[^1]:`
 
 
+## Image Credits
+Photo by <a href="https://unsplash.com/@ghostdogg187?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">wallace Henry</a> on <a href="https://unsplash.com/photos/the-night-sky-is-filled-with-stars-and-stars-5utisuD5Bdk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=41336">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=41336">Pixabay</a>

@@ -1,7 +1,7 @@
 ---
 title: This is my third post.
 description: This is a post on My Blog about win-win survival strategies.
-image: https://brooks-html-template.netlify.app/img/webp/office104.webp
+image: /img/wallace-henry-5utisuD5Bdk-unsplash.jpg
 date: 2025-01-02
 show_button: true
 button: 

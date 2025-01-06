@@ -1,7 +1,7 @@
 ---
 layout: "home.njk"
-title: Adam Bootstrap
-description: Adam Dj Brett Bootstrap Projects
+title: 📓 11ty Journal
+description: 📓 11ty Journal Bootstrap Projects
 show_button: true
 button: 
  text: Explore All Posts

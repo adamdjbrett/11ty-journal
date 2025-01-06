@@ -1,7 +1,7 @@
 {
-	"name": "adam-11ty-journal",
+	"name": "11ty-journal",
 	"version": "1.0.1",
-	"description": "Adam Dj Brett 11ty Journal",
+	"description": "A 📓 11ty Journal a minimalist boostrap theme",
 	"type": "module",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
@@ -18,9 +18,9 @@
 		"url": "git://github.com/adamdjbrett/11ty-journal.git"
 	},
 	"author": {
-		"name": "Adam Dj Brett",
-		"email": "info@adamdjbrett.com",
-		"url": "https://adamdjbrett.com/"
+		"name": "Jane Doe",
+		"email": "info@example.com",
+		"url": "https://example.com/"
 	},
 	"license": "MIT",
 	"engines": {

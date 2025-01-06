@@ -1,9 +1,8 @@
-title: "Bootstrap Adam Dj Brett"
-description: "A Bootstrap Minimalist project by Adam Dj Brett"
+title: "📓 11ty Journal"
+description: "A 📓 11ty Journal a minimalist boostrap theme"
 image: /logo.svg
 favicon: /logo.svg
 url: "http://localhost:8080"
-language: "en"
 locale: en_US
 
 metasocial: 
@@ -26,20 +25,22 @@ navbar:
    url: /about/
  - nav: Contact
    url: /contact/
+ - nav: Search
+   url: /search/
 
 nav_contact:
- text: Search
- url: /search/
+ text: Download
+ url: https://github.com/adamdjbrett/11ty-journal
 
 footer: 
  text1: Built with
  text2: 11ty
  text2_url: https://11ty.dev
  text3: Made by
- text4: Adam DJ Brett
- text4_url: https://adamdjbrett.com
+ text4: Template Deck
+ text4_url: https://templatedeck.com/
 
 author: 
- name: "Adam DJ Brett"
- email: "info@adamdjbrett.com"
+ name: "Jane Doe"
+ email: "info@example.com"
  url: "/about/"
