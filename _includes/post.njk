@@ -1,0 +1,53 @@
+---
+layout: base.njk
+---
+{% include "partials/style.njk" %}
+{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
+{%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
+<main class="container py-vh-3"><heading-anchor>
+<div class="row d-flex justify-content-center text-center">
+<div class="col-12 col-lg-10 col-xl-6">
+<small class="text-muted">By <a href="{{metadata.author.url}}">{{metadata.author.name}}</a> On <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></small>
+<h1 class="display-huge">{{title}}</h1>
+<p class="lead pt-2 py-vh-2">{{description}}</p>
+<small class="text-muted">{%- for tag in tags | filterTagList %}	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}{%- endfor %}
+</small>
+</div>
+<div class="row">
+<div class="col-12">
+{% if image %}<img src="https://wsrv.nl/?url={{metadata.url}}{{image}}&output=webp" class="img-fluid" width="100%" height="100%" alt="{{title}}">{% endif %}
+</div>
+</div>
+<div class="row d-flex justify-content-center text-start">
+<div class="col-12 col-lg-10 col-xl-6 py-vh-2">
+{% if show_toc %}<h3>{{metadata.toc_widget_title}}</h3>{{ content | toc | safe }}{% endif %}
+{{content|safe}}
+</div>
+{% if show_button %}<div class="container"><div class="row py-4"><div class="col-11 col-lg-10 col-xl-6 text-center mx-auto"><a href="{{button.url}}" class="btn btn-primary btn-xl shadow">{{button.text}}</a></div></div></div>{% endif %}
+</div>
+</div>
+</heading-anchor></main>
+
+{%- if collections.posts %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+{%- set nextPost = collections.posts | getNextCollectionItem %}
+{%- if nextPost or previousPost %}
+<div class="container d-flex justify-content-between">
+<div class="col border-top border-end py-vh-3 d-flex align-items-center">
+{%- if previousPost %}  
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/></svg>
+<a class='ms-2 display-6' href='{{ previousPost.url }}'>{{ previousPost.data.title }}</a>
+{%- endif %}
+</div>
+<div class="col border-top text-end py-vh-3 d-flex align-items-center justify-content-end">
+{%- if nextPost %}
+  <a class='me-2 display-6' href='{{ nextPost.url }}'>{{ nextPost.data.title }}</a><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg>
+{%- endif %}
+</div>
+</div>
+{%- endif %}
+{%- endif %}

@@ -1,0 +1,29 @@
+---
+layout: base.njk
+---
+<main><heading-anchor>
+<div class="w-100 overflow-hidden position-relative" id="top">
+<div class="container py-vh-5">
+<div class="row d-flex justify-content-center text-center">
+<div class="col-12 col-lg-10">
+<h1 class="display-huge mb-3">{{title}}</h1>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row d-flex justify-content-center">
+<div class="col-11 col-lg-10 col-xl-6">
+<div class="row border-bottom">
+{%- for post in collections.posts| reverse | limit(5) -%}
+<article class="col-12 border-top px-0 py-4 d-flex justify-content-between align-items-center">
+<h2 class="h4 lh-1 mb-0"><a class='text-decoration-none' href="{{post.url}}">{{ post.data.title }}</a></h2>
+<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+</article>
+{%- endfor -%}
+</div>
+</div>
+</div>
+{% if show_button %}<div class="container"><div class="row py-4"><div class="col-11 col-lg-10 col-xl-6 text-center mx-auto"><a href="{{button.url}}" class="btn btn-primary btn-xl shadow">{{button.text}}</a></div></div></div>{% endif %}
+</div>
+</heading-anchor></main>

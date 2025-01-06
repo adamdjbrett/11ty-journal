@@ -1,0 +1,8 @@
+<ul>
+{% for post in postslist | reverse %}
+<li>
+<h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
+</li>
+{% endfor %}
+</ul>
