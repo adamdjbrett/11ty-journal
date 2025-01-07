@@ -1,5 +1,6 @@
 # 📓 11ty Journal
 
+`update node version package`
 
 ----
 
