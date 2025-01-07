@@ -1,5 +1,6 @@
 title: "📓 11ty Journal"
 description: "A 📓 11ty Journal a minimalist boostrap theme"
+language: "en"
 image: /logo.svg
 favicon: /logo.svg
 url: "https://journal.000000076.xyz/"
@@ -35,9 +36,9 @@ footer:
  text1: Built with
  text2: 11ty
  text2_url: https://11ty.dev
- text3: Made by
- text4: Template Deck
- text4_url: https://templatedeck.com/
+ #text3: Made by
+ #text4: Name
+ #text4_url: https://example.com/
 
 author: 
  name: "Jane Doe"

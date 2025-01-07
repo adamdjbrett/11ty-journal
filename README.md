@@ -1,13 +1,29 @@
 # 📓 11ty Journal
 
-`update node version package`
+## Acknowledgements
+This theme is a port of [11ty Brook Dev by Template Deck](https://templatedeck.com/brook-html-template.html). 
+
+I admire their theme and work. I tried to use Brooke but I ran into complications with the Table of Contents and footnotes not working as well as the theme not working with 11ty Version 3.0.0. Should anyone wind up using this theme please give credit and gratitude to 
+Holger Könemann and Template Deck for their creative use of the bootstrap template and for making such a lightweight and useful theme for blogging.
+
+[Original Github Repo](https://github.com/holger1411/brook-dev)
+
+## CHANGELOG
+- `update node version package`
 
 ----
 
-## Features: 
-+ 11ty aka Eleventy
-+ Bootstrap UI
-+ Pagefind
+### Added Features: 
++ Updated Bootstrap UI
++ Added Pagefind
++ Footnotes
++ Table of Contents
++ PWA
++ Header Anchor
++ Contact Form
++ Stylized Feed
+
+### Previous Features
 + Author
 + Static Page
 + Blog List Post
@@ -15,16 +31,9 @@
 + Blog Pagination
 + Post Pagination
 + Navbar Menu
-+ Footernotes
-+ Table of Content
-+ PWA
 + Config YAML Setup
-+ Header Anchor
-+ Contact Form
 + Clean Design
-+ Table of Content widget
 + Button Widget
-+ Feed
 + Tags
 + Clean CSS / Minimize
 

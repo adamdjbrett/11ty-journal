@@ -1,11 +1,13 @@
 ---
 title: "Black Cats"
+date: 2025-01-04
 description: "The void blinks back"
 show_toc: true
 show_button: false
 tags: 
  - Cat
  - black
+ - footnotes
 ---
 
 ## Sometimes the void blinks back.
