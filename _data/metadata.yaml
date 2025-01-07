@@ -36,9 +36,9 @@ footer:
  text1: Built with
  text2: 11ty
  text2_url: https://11ty.dev
- #text3: Made by
- #text4: Name
- #text4_url: https://example.com/
+ text3: Designed by
+ text4: Template Deck
+ text4_url: https://templatedeck.com/brook-html-template.html
 
 author: 
  name: "Jane Doe"
