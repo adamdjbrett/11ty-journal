@@ -2,7 +2,8 @@ title: "📓 11ty Journal"
 description: "A 📓 11ty Journal a minimalist boostrap theme"
 image: /logo.svg
 favicon: /logo.svg
-url: "http://localhost:8080"
+url: "https://journal.000000076.xyz/"
+#url: "http://localhost:8080/"
 locale: en_US
 
 metasocial: 
@@ -17,12 +18,10 @@ nav_logo:
  title: 📓 11ty Journal
 
 navbar: 
- - nav: Home
-   url: /
- - nav: Blog
-   url: /blog/
  - nav: About
    url: /about/
+ - nav: Blog
+   url: /blog/
  - nav: Contact
    url: /contact/
  - nav: Search
