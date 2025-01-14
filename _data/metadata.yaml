@@ -3,7 +3,7 @@ description: "A 📓 11ty Journal a minimalist boostrap theme"
 language: "en"
 image: /logo.svg
 favicon: /logo.svg
-url: "https://journal.000000076.xyz/"
+url: "https://journal.000000076.xyz"
 #url: "http://localhost:8080/"
 locale: en_US
 
