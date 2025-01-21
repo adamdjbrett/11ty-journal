@@ -13,7 +13,11 @@
 <meta content="{{image or metadata.metasocial.image}}" name="twitter:image">
 <meta content="{{image or metadata.metasocial.image}}" name="facebook:image">
 <meta content="{{image or metadata.metasocial.image}}" name="og:image">
-<link href="{{metadata.favicon}}" rel="icon" type="image/x-icon">
+<!-- inlined SVG favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📓</text></svg>" />
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📓</text></svg>" />
+<!-- <link href="{{metadata.favicon}}" rel="icon" type="image/x-icon"> -->
+<!-- <link rel="apple-touch-icon" href="{{metadata.favicon}}"> -->
 <meta content="{{metadata.metasocial.facebook}}" property="facebook:author">
 <meta content="{{metadata.metasocial.twitteruser}}" property="twitter:author">
 <meta content="{{metadata.metasocial.twitter}}" name="twitter:site">
@@ -26,7 +30,7 @@
 <meta name="generator" content="{{ eleventy.generator }}"> 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"{{metadata.description}}","headline":"{{metadata.title}} - {{metadata.description}}","name":"{{metadata.title}}","url":"{{metadata.url}}{{page.url}}"}</script>
 <link rel="manifest" href="/manifest.json" crossorigin="use-credentials"/>
-<link rel="apple-touch-icon" href="{{metadata.favicon}}">
+
 {%- css %}{% include "public/css/main.css" %}{% endcss %}
 <style>{% getBundle "css" %}</style>
 {%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
