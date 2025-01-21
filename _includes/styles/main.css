@@ -1,5 +1,5 @@
-h1,h2,h3,h4,h5 { font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;}
-html,body {font-family:'arial' , sans-serif;}
+h1,h2,h3,h4,h5 { font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif; word-wrap: break-word;}
+html,body {font-family:'arial' , sans-serif; word-wrap: break-word;}
 .mt-3 {margin-top: 30px;"}
 .poem span[class^="indent-"],
 .poetry span[class^="indent-"] {
