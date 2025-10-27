@@ -9,6 +9,7 @@ Holger Könemann and Template Deck for their creative use of the bootstrap templ
 [Original Github Repo](https://github.com/holger1411/brook-dev)
 
 ## CHANGELOG
+- moving to Cloudlfare Pages
 - `update node version package`
 
 ----
