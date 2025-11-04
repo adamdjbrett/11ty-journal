@@ -5,6 +5,7 @@ import pluginNavigation from "@11ty/eleventy-navigation";
 import yaml from "js-yaml";
 import pluginFilters from "./_config/filters.js";
 import { execSync } from 'child_process';
+import htmlmin from "html-minifier-terser";
 import markdownIt from 'markdown-it';
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItFootnote from "markdown-it-footnote";
@@ -67,6 +68,18 @@ eleventyConfig.addPlugin(pluginSyntaxHighlight, {
 			level: [1,2,3,4],
 			slugify: eleventyConfig.getFilter("slugify")
 		});
+	});
+
+	// Minify HTML output similar to 11ty-brutalism
+	eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
+		if (outputPath && outputPath.endsWith(".html")) {
+			return htmlmin.minify(content, {
+				useShortDoctype: true,
+				removeComments: true,
+				collapseWhitespace: true
+			});
+		}
+		return content;
 	});
 
 	  eleventyConfig.addPlugin(pluginTOC, {
